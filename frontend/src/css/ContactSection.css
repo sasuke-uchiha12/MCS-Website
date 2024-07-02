@@ -1,0 +1,90 @@
+.contact-section {
+    padding-top: 50px;
+    background: #161924 !important;
+    color: #fff;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background: linear-gradient(to bottom, #8FF809 -41%, rgba(102, 216, 46, 0) 30%);
+    border-radius: 15px;
+    margin-left: 56px;
+    margin-right: 56px;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-info h2 {
+    font-family: Orbitron, sans-serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.contact-info p {
+    text-align: left;
+}
+
+.contact-info .highlight {
+    background: linear-gradient(90deg, #66d82e 60.81%, #367218 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-info p {
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    flex: 2;
+    padding: 20px;
+}
+
+.social-links {
+
+    text-align: left;
+    margin-left: 80px;
+}
+
+.social-links p {
+    font-family: 'Orbitron', sans-serif !important;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 4px;
+    color: #fff;
+}
+
+.social-links .highlight {
+    background: linear-gradient(90deg, #66d82e 60.81%, #367218 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.social-links .icons {
+    margin-top: 0px;
+}
+
+.social-links .icons button {
+    margin-top: 0px;
+    background: none;
+    border: none;
+    color: grey;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.social-links .icons button:hover {
+    color: #66d82e;
+}
+
+.copy-right p{
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px !important;
+}

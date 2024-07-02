@@ -1,0 +1,144 @@
+/* src/css/UpcomingEvents.css */
+
+.upcoming-events-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+  }
+  
+  .event-header {
+    border-radius: 10px;
+    border: 1.5px solid #438011;
+    background-color: rgba(217, 217, 217, 0);
+    max-width: 100%;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 900;
+    padding: 10px 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .event-title {
+    font-family: Orbitron, sans-serif;
+    margin: 10px !important;
+  }
+  
+  .event-title .upcoming {
+    color: #ffffff; /* White color */
+  }
+  
+  .event-title .events {
+    background: linear-gradient(90deg, #66d82e 60.81%, #367218 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .event-content {
+    border-radius: 13px;
+    background-color: rgba(38, 38, 38, 0.5);
+    margin-top: 40px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1180px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .event-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .event-image-column {
+    flex: 1;
+  }
+  
+  .event-image {
+    width: 85%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .event-details-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure button stays at the bottom */
+    height: 100%;
+  }
+  
+  .event-details {
+    color: #fff;
+  }
+  
+  .event-description {
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: 18px; /* Adjusted font size */
+    line-height: 1.6; /* Adjusted line height */
+    margin-bottom: 20px;
+    flex-grow: 1; /* Allow description to take up available space */
+  }
+  
+  .register-btn {
+    background-color: #006400; /* Dark green background color */
+    color: white; /* White text color */
+    padding: 10px 20px;
+    border: 2px solid #006400; /* Same color as background for seamless effect */
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative; /* Position relative for the glow effect */
+    outline: none; /* Remove the default outline */
+    font-size: 16px; /* Adjust font size as needed */
+    transition: all 0.3s ease; /* Smooth transition */
+    box-shadow: 0 0 0 rgba(0, 255, 0, 0); /* Initial box-shadow with no glow */
+    align-self: flex-start; /* Align button to the start of the column */
+  }
+  
+  .register-btn:hover {
+    border-color: #00ff00; 
+    background-color: transparent;
+    box-shadow: 0px 0px 10px 0px rgba(0, 255, 0, 0.7); 
+  }
+  
+  .register-btn::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    /* border-top: 10px solid rgba(0, 255, 0, 0.7);
+    border-right: 10px solid rgba(0, 255, 0, 0.7); */
+    opacity: 0;
+    transition: opacity 0.3s ease, width 0.3s ease, height 0.3s ease;
+  }
+  
+  .register-btn:hover::after {
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .event-layout {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .event-image {
+      max-width: 100%;
+    }
+  
+    .register-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
