@@ -1,98 +1,99 @@
-/* src/components/Hero.css */
+/* src/css/Hero.css */
 
 .hero {
-    background-color: #000;
-    background: url('../images/Hero.png') no-repeat center center;
-    color: #fff;
-    text-align: center;
-    padding: px 0; /* Increased padding for more height */
-    position: relative;
+  background-color: #000;
+  background: url('../images/Hero.png') no-repeat center center;
+  color: #fff;
+  text-align: center;
+  padding: 150px 0; /* Increased padding for more height */
+  position: relative;
+}
+
+.hero-content {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 210px;
+  border-radius: 10px;
+}
+
+.hero-title {
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.hero-subtitle {
+  font-size: 2em;
+  color: #00ff00;
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* Media Queries */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .hero {
+    background: url('../images/Hero.png') no-repeat top 190px center;
+    padding: 70px 0;
+    background-size:contain; 
   }
-  
-  .hero-content {
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 20px;
-    padding-bottom: 210px;
-    border-radius: 10px;
+  .hero-title {
+    font-size: 2.5em;
   }
-  
+
+  .hero-subtitle {
+    
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .hero {
+    padding: 90px 0; /* Adjusted padding for medium devices */
+  }
+
+  .hero-title {
+    font-size: 3em;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .hero {
+    padding: 120px 0; /* Adjusted padding for large devices */
+  }
+
+  .hero-title {
+    font-size: 3em;
+  }
+
+  .hero-subtitle {
+    font-size: 1.8em;
+    line-height: 38px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .hero {
+    padding: 150px 0; /* Increased padding for extra large devices */
+  }
+
   .hero-title {
     font-size: 4em;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Orbitron', sans-serif;
-    margin: 0;
-    padding: 10px 0;
   }
-  
+
   .hero-subtitle {
     font-size: 2em;
-    color: #00ff00;
-    font-family: 'Press Start 2P', cursive;
-    margin: 0;
-    padding: 10px 0;
   }
-  
-  /* Media Queries */
-  
-  /* Small devices (landscape phones, 576px and up) */
-  @media (max-width: 576px) {
-    .hero {
-      padding: 70px 0; /* Adjusted padding for smaller devices */
-    }
-  
-    .hero-title {
-      font-size: 2.5em;
-    }
-  
-    .hero-subtitle {
-      font-size: 1.2em;
-    }
-  }
-  
-  /* Medium devices (tablets, 768px and up) */
-  @media (max-width: 768px) {
-    .hero {
-      padding: 90px 0; /* Adjusted padding for medium devices */
-    }
-  
-    .hero-title {
-      font-size: 3em;
-    }
-  
-    .hero-subtitle {
-      font-size: 1.5em;
-    }
-  }
-  
-  /* Large devices (desktops, 992px and up) */
-  @media (max-width: 992px) {
-    .hero {
-      padding: 120px 0; /* Adjusted padding for large devices */
-    }
-  
-    .hero-title {
-      font-size: 3.5em;
-    }
-  
-    .hero-subtitle {
-      font-size: 1.8em;
-    }
-  }
-  
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {
-    .hero {
-      padding: 150px 0; /* Increased padding for extra large devices */
-    }
-  
-    .hero-title {
-      font-size: 4em;
-    }
-  
-    .hero-subtitle {
-      font-size: 2em;
-    }
-  }
-  
+}

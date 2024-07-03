@@ -1,8 +1,9 @@
-/* src/App.css */
+
 
 .App {
   text-align: center;
   background-color: #000;
   color: white;
   font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
 }

@@ -12,7 +12,7 @@ const AboutUs = () => {
         <img src={aboutUsLoop} alt="Loop" className="about-us-loop" />
       </div>
       <div className="about-us-content">
-        <h2 className="about-us-header">About Us</h2>
+        <h2 className="about-us-header">ABOUT US</h2>
         <p className="about-us-title">
           WE'RE CODERS, ENTHUSIASTS, GEEKS.<br />
           WE'RE <span className="msc-title">MSCIANS</span>
@@ -24,7 +24,7 @@ const AboutUs = () => {
         </p>
       </div>
       <div className="about-us-bg-container">
-        <h1 className="about-us-bg-text">ABOUT US</h1>
+        <h1 className="about-us-bg-text">About US</h1>
       </div>
       <UpcomingEvents />
     </section>

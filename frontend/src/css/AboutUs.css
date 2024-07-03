@@ -1,84 +1,209 @@
 /* src/css/AboutUs.css */
 
 .about-us {
-    position: relative;
-    color: #fff;
-    padding: 50px 0;
-    background: #161924; /* Background color as per design */
-    overflow: hidden; /* Ensure images are contained */
-    text-align: left; /* Ensure text alignment */
-  }
-  
-  .about-us-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    position: relative;
-    z-index: 2; /* Ensure content is above the background images */
-  }
-  
-  .about-us-header {
-    font-size: 2.5em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-  
+  position: relative;
+  color: #fff;
+  padding: 50px 0;
+  background: #161924; /* Background color as per design */
+  overflow: hidden; /* Ensure images are contained */
+  text-align: left; /* Ensure text alignment */
+}
+
+.about-us-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 2; /* Ensure content is above the background images */
+}
+
+.about-us-header {
+  font-size: 3em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about-us-title {
+  font-size: 2.5em;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.about-us-description {
+  font-size: 1.2em;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  margin-left: 10%; /* Move description to the right */
+}
+
+.about-us-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none; /* Ensure images don't interfere with interactions */
+}
+
+.about-us-bg-container {
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.about-us-bg-text {
+  font-size: 7em;
+  font-family: 'Arial', sans-serif;
+  color: rgba(255, 255, 255, 0.1);
+  margin: 0;
+}
+
+.about-us-loop {
+  position: absolute;
+  top: 0;
+  left: -30%;
+  width: 67%;
+  height: auto;
+  opacity: 0.9;
+}
+
+.msc-title {
+  font-family: 'Orbitron', sans-serif;
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+  background: linear-gradient(90deg, #00ff00, #009900); /* Gradient from light to dark green */
+  background-clip: text;
+  color: transparent;
+}
+
+/* Media Queries */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .about-us-header,
   .about-us-title {
-    font-size: 2.5em;
-    font-family: 'Orbitron', sans-serif;
-    margin-bottom: 20px;
-    line-height: 1.7;
-    font-weight: 600;
+    font-size: 1.8em;
   }
-  
+
+  .about-us-description {
+    font-size: 1em;
+    line-height: 1.4;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .about-us-loop {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180%;
+  }
+
+  .about-us-bg-text {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .about-us-bg-container {
+    text-align: center;
+    margin-right: 0;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .about-us-header,
+  .about-us-title {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .about-us-description {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .about-us-loop {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+  }
+
+  .about-us-bg-text {
+    font-size: 4em;
+    text-align: center;
+  }
+
+  .about-us-bg-container {
+    text-align: center;
+    margin-right: 0;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .about-us-header,
+  .about-us-title {
+    font-size: 2.2em;
+  }
+
   .about-us-description {
     font-size: 1.2em;
-    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    margin-bottom: 40px;
-    margin-left: 10%; /* Move description to the right */
+    margin-left: 5%;
   }
-  
-  .about-us-images {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    pointer-events: none; /* Ensure images don't interfere with interactions */
+
+  .about-us-loop {
+    left: 10%;
+    transform: translateX(-50%);
+    width: 180%;
+    top: 80px;
   }
-  
+
+  .about-us-bg-text {
+    margin-top: -60px;
+    font-size: 3.7em;
+    text-align: right;
+  }
+
   .about-us-bg-container {
     text-align: right;
-    margin-top: 20px;
-    margin-right: 50px;
+    margin-right: 20px;
   }
-  
-  .about-us-bg-text {
-    font-size: 7em;
-    font-family: 'Arial', sans-serif;
-    color: rgba(255, 255, 255, 0.1);
-    margin: 0;
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .about-us-header,
+  .about-us-title {
+    font-size: 3em;
   }
-  
+
+  .about-us-description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-left: 10%;
+  }
+
   .about-us-loop {
-    position: absolute;
-    top: 0;
     left: -30%;
     width: 67%;
-    height: auto;
-    opacity: 0.9;
   }
-  
-  .msc-title {
-    font-family: 'Orbitron', sans-serif;
-    display: inline-block;
-    position: relative;
-    white-space: nowrap;
-    background: linear-gradient(90deg, #00ff00, #009900); /* Gradient from light to dark green */
-    background-clip: text;
-    color: transparent;
+
+  .about-us-bg-text {
+    font-size: 7em;
+    text-align: right;
   }
-  
+
+  .about-us-bg-container {
+    text-align: right;
+    margin-right: 50px;
+  }
+}
