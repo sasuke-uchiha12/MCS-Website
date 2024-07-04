@@ -1,5 +1,4 @@
 import React from 'react';
-// import Footer from './Footer';
 import ContactForm from './ContactForm';
 import '../css/ContactSection.css';
 

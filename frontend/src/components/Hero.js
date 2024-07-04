@@ -1,7 +1,5 @@
-// src/components/Hero.js
-
 import React from 'react';
-import '../css/Hero.css'; // Make sure to create this CSS file
+import '../css/Hero.css';
 
 const Hero = () => {
   return (

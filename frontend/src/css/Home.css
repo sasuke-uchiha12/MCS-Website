@@ -1,22 +1,14 @@
-/* src/pages/Home.css */
-
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .App {
-    text-align: center;
-    /* background-color: #000; */
-    color: white;
-  }
-  
-  /* section {
-    padding: 100px 0;
-  } */
-  
-  section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  text-align: center;
+  color: white;
+}
+
+section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}

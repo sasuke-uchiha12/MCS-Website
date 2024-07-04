@@ -1,12 +1,10 @@
-/* src/css/AboutUs.css */
-
 .about-us {
   position: relative;
   color: #fff;
   padding: 50px 0;
-  background: #161924; /* Background color as per design */
-  overflow: hidden; /* Ensure images are contained */
-  text-align: left; /* Ensure text alignment */
+  background: #161924; 
+  overflow: hidden; 
+  text-align: left; 
 }
 
 .about-us-content {
@@ -14,7 +12,7 @@
   margin: 0 auto;
   padding: 20px;
   position: relative;
-  z-index: 2; /* Ensure content is above the background images */
+  z-index: 2; 
 }
 
 .about-us-header {
@@ -37,7 +35,7 @@
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   margin-bottom: 40px;
-  margin-left: 10%; /* Move description to the right */
+  margin-left: 10%;
 }
 
 .about-us-images {
@@ -47,7 +45,7 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  pointer-events: none; /* Ensure images don't interfere with interactions */
+  pointer-events: none; 
 }
 
 .about-us-bg-container {
@@ -77,14 +75,12 @@
   display: inline-block;
   position: relative;
   white-space: nowrap;
-  background: linear-gradient(90deg, #00ff00, #009900); /* Gradient from light to dark green */
+  background: linear-gradient(90deg, #00ff00, #009900); 
   background-clip: text;
   color: transparent;
 }
 
 /* Media Queries */
-
-/* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   .about-us-header,
   .about-us-title {

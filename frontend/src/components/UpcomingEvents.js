@@ -1,15 +1,11 @@
-// src/components/UpcomingEvents.js
-
 import React, { useState, useEffect } from 'react';
 import '../css/UpcomingEvents.css';
-import eventImage from '../images/Event.png'; // Importing the new image
+import eventImage from '../images/Event.png'; 
 
 const UpcomingEvents = () => {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    // Fetch events from an API or database
-    // For demonstration, we're using a static list
     const fetchedEvents = [
       {
         id: 1,
@@ -17,7 +13,6 @@ const UpcomingEvents = () => {
         description: 'Lorem ipsum dolor sit amet consectetur. Ornare dolor id turpis sit. Praesent massa tortor iaculis sit orci. Cras volutpat tempus adipiscing diam eget malesuada. Venenatis ut eget imperdiet in elementum neque eleifend eu. Vestibulum dignissim et leo massa velit sed mauris. Nisl molestie felis augue pharetra mauris ultricies eu pellentesque. Elementum fermentum porttitor id interdum nec purus platea.',
         image: eventImage
       },
-      // Add more events as needed
     ];
     setEvents(fetchedEvents);
   }, []);

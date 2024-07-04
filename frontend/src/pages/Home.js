@@ -1,5 +1,3 @@
-// src/pages/Home.js
-
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
@@ -18,7 +16,6 @@ const Home = () => {
       <ImageSlider />
       <ContactSection />
       <Footer />
-      {/* Add other sections of the home page here */}
     </div>
   );
 };

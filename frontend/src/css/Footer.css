@@ -1,12 +1,12 @@
 .footer {
-  background: black; /* Black background color */
-  color: #00ff00; /* Green text color */
+  background: black; 
+  color: #00ff00;
   text-align: center;
-  padding: 10px 0; /* Fix the footer at the bottom of the page */
+  padding: 10px 0; 
   bottom: 0;
   width: 100%;
   font-size: 10px;
   font-weight: 100;
   font-family: 'Press Start 2P', cursive;
-  letter-spacing: 2px; /* Monospace font for tech look */
+  letter-spacing: 2px;
 }
