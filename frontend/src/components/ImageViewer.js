@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../css/ImageViewer.css'; // Adjust the path as necessary
-import eventImage from '../images/Event.png'; // Adjust the path as necessary
+import '../css/ImageViewer.css'; // Adjust the path as necessary // Adjust the path as necessary
 
 const ImageViewer = () => {
   const [images, setImages] = useState([]);
@@ -32,7 +31,7 @@ const ImageViewer = () => {
       <div className="container">
         {images.map(image => (
           <figure key={image.id}>
-            <img src={image.src} alt={`Image ${image.title}`} />
+            <img src={image.src} alt={image.title} />
             {/* <figcaption><a href="#">{image.title}</a></figcaption> */}
           </figure>
         ))}
