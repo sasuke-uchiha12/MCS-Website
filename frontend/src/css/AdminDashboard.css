@@ -1,0 +1,110 @@
+.admin-dashboard-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .admin-dashboard-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .admin-dashboard-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-dashboard-container form input,
+  .admin-dashboard-container form textarea,
+  .admin-dashboard-container form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .admin-dashboard-container form textarea {
+    resize: vertical;
+  }
+  
+  .admin-dashboard-container form .image-upload-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .admin-dashboard-container form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .admin-dashboard-container form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .admin-dashboard-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .admin-dashboard-container ul li {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .admin-dashboard-container ul li h2 {
+    margin: 0;
+  }
+  
+  .admin-dashboard-container ul li p {
+    margin: 0;
+  }
+  
+  .admin-dashboard-container ul li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .admin-dashboard-container ul li .register-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .admin-dashboard-container ul li .register-btn:hover {
+    background-color: #218838;
+  }
+  
+  .admin-dashboard-container ul li button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .admin-dashboard-container ul li button:hover {
+    background-color: #c82333;
+  }
+  
