@@ -8,6 +8,7 @@ const UpcomingEvents = () => {
     fetch('http://localhost:5000/events')
       .then(response => response.json())
       .then(data => {
+        console.log('Fetched events:', data); // Log events to check data
         const sortedEvents = data
           .filter(event => new Date(event.date) >= new Date()) // Filter for upcoming events
           .sort((a, b) => new Date(a.date) - new Date(b.date)); // Sort by date
@@ -36,10 +37,22 @@ const UpcomingEvents = () => {
             </div>
             <div className="event-details-column">
               <div className="event-details">
+                <h1 className='event-heading'>{event.title}</h1>
                 <p className="event-description">
                   {event.description}
                 </p>
-                <button className="register-btn" tabindex="0">Register</button>
+                {event.formLink ? (
+                  <a 
+                    href={event.formLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="register-btn"
+                  >
+                    Register
+                  </a>
+                ) : (
+                  <p>No registration link available</p>
+                )}
               </div>
             </div>
           </div>

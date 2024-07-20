@@ -1,110 +1,173 @@
 .admin-dashboard-container {
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .admin-dashboard-container h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .admin-dashboard-container form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 500px;
-    margin: 0 auto 30px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .admin-dashboard-container form input,
-  .admin-dashboard-container form textarea,
-  .admin-dashboard-container form select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .admin-dashboard-container form textarea {
-    resize: vertical;
-  }
-  
-  .admin-dashboard-container form .image-upload-options {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .admin-dashboard-container form button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .admin-dashboard-container form button:hover {
-    background-color: #0056b3;
-  }
-  
-  .admin-dashboard-container ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .admin-dashboard-container ul li {
-    background-color: white;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .admin-dashboard-container ul li h2 {
-    margin: 0;
-  }
-  
-  .admin-dashboard-container ul li p {
-    margin: 0;
-  }
-  
-  .admin-dashboard-container ul li img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  .admin-dashboard-container ul li .register-btn {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #28a745;
-    color: black;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  .admin-dashboard-container ul li .register-btn:hover {
-    background-color: #218838;
-  }
-  
-  .admin-dashboard-container ul li button {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #dc3545;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .admin-dashboard-container ul li button:hover {
-    background-color: #c82333;
-  }
-  
+  padding: 20px;
+  background-color: #161924; /* Dark background */
+}
+
+.admin-dashboard-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff; /* White text for better readability */
+}
+
+.admin-dashboard-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  padding: 20px;
+  background: grey;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard-container form input,
+.admin-dashboard-container form textarea,
+.admin-dashboard-container form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #2c2c2c; /* Darker background for input fields */
+  color: #fff; /* White text for better readability */
+}
+
+.admin-dashboard-container form textarea {
+  resize: vertical;
+}
+
+.admin-dashboard-container form .image-upload-options {
+  display: flex;
+  gap: 10px;
+  color: #fff; /* White text for labels */
+}
+
+.admin-dashboard-container form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.admin-dashboard-container form button:hover {
+  background-color: #0056b3;
+}
+
+.admin-dashboard-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.admin-dashboard-container ul li {
+  background-color: #1e1e2d; /* Dark background for list items */
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.admin-dashboard-container ul li .event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-dashboard-container ul li h2 {
+  margin: 0;
+  color: #fff; /* White text */
+}
+
+.admin-dashboard-container ul li p {
+  margin: 0;
+  color: #ccc; /* Light grey text */
+}
+
+.admin-dashboard-container ul li img {
+  width: 200px; /* Fixed width for the image */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.admin-dashboard-container ul li .event-details {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.admin-dashboard-container ul li .event-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-dashboard-container ul li .register-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.admin-dashboard-container ul li .register-btn:hover {
+  background-color: #218838;
+}
+
+.admin-dashboard-container ul li .delete-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+}
+
+.admin-dashboard-container ul li .delete-btn:hover {
+  background-color: #c82333;
+}
+
+.admin-dashboard-container ul li .edit-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffc107;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.admin-dashboard-container ul li .edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.edit-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.edit-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}

@@ -32,12 +32,24 @@ router.post('/', authenticateToken, async (req, res) => {
 });
 
 // Update an event
-router.patch('/:id', authenticateToken, async (req, res) => {
+// router.patch('/:id', authenticateToken, async (req, res) => {
+//   try {
+//     const updatedEvent = await Event.findByIdAndUpdate(req.params.id, req.body, { new: true });
+//     res.json(updatedEvent);
+//   } catch (err) {
+//     res.status(400).json({ message: err.message });
+//   }
+// });
+// PUT request to update an event
+router.put('/:id', authenticateToken, async (req, res) => {
   try {
-    const updatedEvent = await Event.findByIdAndUpdate(req.params.id, req.body, { new: true });
-    res.json(updatedEvent);
+    const event = await Event.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    if (!event) {
+      return res.status(404).send({ error: 'Event not found' });
+    }
+    res.json(event);
   } catch (err) {
-    res.status(400).json({ message: err.message });
+    res.status(500).send({ error: err.message });
   }
 });
 

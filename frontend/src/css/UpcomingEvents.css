@@ -47,6 +47,9 @@
   max-width: 1180px;
   display: flex;
   gap: 20px;
+  min-height: 200px; /* Set a minimum height for consistency */
+  max-height: 300px; /* Set a maximum height */
+  overflow: hidden; /* Ensure content does not overflow */
 }
 
 .event-layout {
@@ -60,49 +63,65 @@
 }
 
 .event-image {
-  width: 85%;
+  width: 100%;
+  max-width: 200px; /* Set a maximum width for the image */
   height: auto;
   border-radius: 10px;
+  object-fit: cover; /* Ensure the image covers the area without distortion */
 }
 
 .event-details-column {
   flex: 2;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
   height: 100%;
 }
 
 .event-details {
+  text-align: left;
   color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}
+
+.event-heading {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .event-description {
   font-family: 'Cascadia Code', sans-serif;
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 1.6;
   margin-bottom: 20px;
-  flex-grow: 1; 
+  flex-grow: 1;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
 }
 
 .register-btn {
-  background-color: #006400; 
-  color: white; 
+  background-color: #006400;
+  color: white;
   padding: 10px 20px;
-  border: 2px solid #006400; 
+  border: 2px solid #006400;
   border-radius: 5px;
   cursor: pointer;
-  position: relative; 
+  position: relative;
   font-size: 16px;
-  transition: all 0.3s ease; 
-  box-shadow: 0 0 0 rgba(0, 255, 0, 0); 
-  align-self: flex-start; 
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 rgba(0, 255, 0, 0);
+  align-self: flex-start;
+  text-decoration: none;
 }
 
 .register-btn:hover {
-  border-color: #00ff00; 
+  border-color: #00ff00;
   background-color: transparent;
-  box-shadow: 0px 0px 10px 0px rgba(0, 255, 0, 0.7); 
+  box-shadow: 0px 0px 10px 0px rgba(0, 255, 0, 0.7);
 }
 
 .register-btn::after {
@@ -162,9 +181,8 @@
 
   .event-image {
     max-width: 100%;
-        display: flex;
-        justify-content: center;
-    
+    display: flex;
+    justify-content: center;
   }
 
   .register-btn {
