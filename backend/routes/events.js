@@ -20,7 +20,8 @@ router.post('/', authenticateToken, async (req, res) => {
     description: req.body.description,
     image: req.body.image,
     category: req.body.category,
-    date: req.body.date
+    date: req.body.date,
+    formLink: req.body.formLink
   });
 
   try {
@@ -32,15 +33,6 @@ router.post('/', authenticateToken, async (req, res) => {
 });
 
 // Update an event
-// router.patch('/:id', authenticateToken, async (req, res) => {
-//   try {
-//     const updatedEvent = await Event.findByIdAndUpdate(req.params.id, req.body, { new: true });
-//     res.json(updatedEvent);
-//   } catch (err) {
-//     res.status(400).json({ message: err.message });
-//   }
-// });
-// PUT request to update an event
 router.put('/:id', authenticateToken, async (req, res) => {
   try {
     const event = await Event.findByIdAndUpdate(req.params.id, req.body, { new: true });
