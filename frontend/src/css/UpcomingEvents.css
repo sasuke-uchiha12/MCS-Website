@@ -2,11 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 0;
+  padding: 80px 20px;
+  /* Add padding around the container */
   background-color: #161924;
 }
 
-.event-header {
+.upcoming-event-header {
   border-radius: 10px;
   border: 1.5px solid #438011;
   background-color: rgba(217, 217, 217, 0);
@@ -22,23 +23,23 @@
   align-items: center;
 }
 
-.event-title {
+.upcoming-event-title {
   font-family: Orbitron, sans-serif;
   margin: 10px !important;
 }
 
-.event-title .upcoming {
+.upcoming-event-title .upcoming {
   color: #ffffff;
 }
 
-.event-title .events {
+.upcoming-event-title .events {
   background: linear-gradient(90deg, #66d82e 60.81%, #367218 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.event-content {
+.upcoming-event-content {
   border-radius: 13px;
   background-color: rgba(38, 38, 38, 0.5);
   margin-top: 40px;
@@ -47,30 +48,37 @@
   max-width: 1180px;
   display: flex;
   gap: 20px;
-  min-height: 200px; /* Set a minimum height for consistency */
-  max-height: 300px; /* Set a maximum height */
-  overflow: hidden; /* Ensure content does not overflow */
+  min-height: 300px;
+  /* Set a minimum height for consistency */
+  max-height: 300px;
+  /* Set a maximum height */
+  overflow: hidden;
+  /* Ensure content does not overflow */
 }
 
-.event-layout {
+.upcoming-event-layout {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-.event-image-column {
+.upcoming-event-image-column {
   flex: 1;
+  max-width: 350px;
+  align-self: center;
+  /* Set a maximum width for the image column */
 }
 
-.event-image {
+.upcoming-event-image {
   width: 100%;
-  max-width: 200px; /* Set a maximum width for the image */
-  height: auto;
+  height: 300px;
+  /* Set a fixed height for the images */
   border-radius: 10px;
-  object-fit: cover; /* Ensure the image covers the area without distortion */
+  object-fit: cover;
+  /* Ensure the image covers the area without distortion */
 }
 
-.event-details-column {
+.upcoming-event-details-column {
   flex: 2;
   display: flex;
   flex-direction: column;
@@ -78,21 +86,21 @@
   height: 100%;
 }
 
-.event-details {
+.upcoming-event-details {
   text-align: left;
   color: #fff;
-  overflow: hidden;
-  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  text-overflow: ellipsis;
+  /* Add ellipsis for overflow text */
 }
 
-.event-heading {
+.upcoming-event-heading {
   text-align: left;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.event-description {
+.upcoming-event-description {
   font-family: 'Cascadia Code', sans-serif;
   font-size: 18px;
   line-height: 1.6;
@@ -100,10 +108,11 @@
   flex-grow: 1;
   text-align: left;
   overflow: hidden;
-  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  text-overflow: ellipsis;
+  /* Add ellipsis for overflow text */
 }
 
-.register-btn {
+.upcoming-register-btn {
   background-color: #006400;
   color: white;
   padding: 10px 20px;
@@ -118,13 +127,13 @@
   text-decoration: none;
 }
 
-.register-btn:hover {
+.upcoming-register-btn:hover {
   border-color: #00ff00;
   background-color: transparent;
   box-shadow: 0px 0px 10px 0px rgba(0, 255, 0, 0.7);
 }
 
-.register-btn::after {
+.upcoming-register-btn::after {
   content: '';
   position: absolute;
   top: -10px;
@@ -135,7 +144,7 @@
   transition: opacity 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 
-.register-btn:hover::after {
+.upcoming-register-btn:hover::after {
   opacity: 1;
   width: 30px;
   height: 30px;
@@ -143,99 +152,119 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-  .event-layout {
+  .upcoming-event-layout {
     flex-direction: column;
     align-items: center;
   }
 
-  .event-image {
-    max-width: 100%;
+  .upcoming-event-image-column {
+    display: none;
+    /* Hide the image on mobile */
   }
 
-  .register-btn {
+  .upcoming-event-details-column {
     width: 100%;
-    text-align: center;
+    text-align: left;
+    /* Align text to the left */
   }
 
-  .event-header {
+  .upcoming-event-header {
     font-size: 20px;
     padding: 5px 15px;
   }
 
-  .event-content {
+  .upcoming-event-content {
     margin-top: 20px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .event-description {
+  .upcoming-event-description {
     font-size: 16px;
+  }
+
+  .upcoming-register-btn {
+    width: auto;
+    text-align: left;
+  }
+  .upcoming-events-container{
+    padding: 30px;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  .event-layout {
+  .upcoming-event-layout {
     flex-direction: column;
     align-items: center;
   }
 
-  .event-image {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
+  .upcoming-event-image-column {
+    display: none;
+    /* Hide the image on tablets */
   }
 
-  .register-btn {
+  .upcoming-event-details-column {
     width: 100%;
-    text-align: center;
+    text-align: left;
+    /* Align text to the left */
   }
 
-  .event-header {
+  .upcoming-event-header {
     font-size: 22px;
     padding: 8px 20px;
   }
 
-  .event-content {
+  .upcoming-event-content {
     margin-top: 25px;
-    padding: 18px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .event-description {
+  .upcoming-event-description {
     font-size: 17px;
+  }
+
+  .upcoming-register-btn {
+    width: auto;
+    text-align: left;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-  .event-header {
+@media (min-width: 992px) {
+  .upcoming-event-header {
     font-size: 22px;
     padding: 5px 10px;
   }
 
-  .event-content {
+  .upcoming-event-content {
     margin-top: 30px;
     padding: 20px;
   }
 
-  .event-description {
+  .upcoming-event-description {
     font-size: 18px;
-    text-align: center;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .event-header {
+  .upcoming-event-header {
     font-size: 26px;
     padding: 12px 30px;
   }
 
-  .event-content {
+  .upcoming-event-content {
     margin-top: 40px;
     padding: 20px;
   }
 
-  .event-description {
+  .upcoming-event-description {
     font-size: 18px;
   }
 }

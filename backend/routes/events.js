@@ -20,7 +20,8 @@ router.post('/', authenticateToken, async (req, res) => {
     description: req.body.description,
     image: req.body.image,
     category: req.body.category,
-    date: req.body.date
+    date: req.body.date,
+    formLink: req.body.formLink
   });
 
   try {

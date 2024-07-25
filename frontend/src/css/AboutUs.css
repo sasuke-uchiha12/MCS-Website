@@ -82,9 +82,14 @@
 
 /* Media Queries */
 @media (max-width: 576px) {
-  .about-us-header,
+  img {
+    max-width: 180% !important;
+  }
+  .about-us-header{
+    font-size: 3.3em !important;
+  }
   .about-us-title {
-    font-size: 1.8em;
+    font-size: 1.8em !important;
   }
 
   .about-us-description {
@@ -101,7 +106,7 @@
   }
 
   .about-us-bg-text {
-    font-size: 3em;
+    font-size: 3em !important;
     text-align: center;
   }
 
@@ -113,6 +118,9 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
+  img {
+    max-width: 180%;
+  }
   .about-us-header,
   .about-us-title {
     font-size: 2em;
@@ -145,6 +153,9 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
+  img {
+    max-width: 180%;
+  }
   .about-us-header,
   .about-us-title {
     font-size: 2.2em;

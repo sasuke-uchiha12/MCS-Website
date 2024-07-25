@@ -19,26 +19,26 @@ const UpcomingEvents = () => {
 
   return (
     <section className="upcoming-events-container">
-      <header className="event-header">
-        <h1 className="event-title">
+      <header className="upcoming-event-header">
+        <h1 className="upcoming-event-title">
           <span className="upcoming">UPCOMING</span> <span className="events">EVENTS</span>
         </h1>
       </header>
       {events.map(event => (
-        <div className="event-content" key={event._id}>
-          <div className="event-layout">
-            <div className="event-image-column">
+        <div className="upcoming-event-content" key={event._id}>
+          <div className="upcoming-event-layout">
+            <div className="upcoming-event-image-column">
               <img 
                 loading="lazy" 
                 src={event.image} 
-                className="event-image" 
+                className="upcoming-event-image" 
                 alt={event.title} 
               />
             </div>
-            <div className="event-details-column">
-              <div className="event-details">
-                <h1 className='event-heading'>{event.title}</h1>
-                <p className="event-description">
+            <div className="upcoming-event-details-column">
+              <div className="upcoming-event-details">
+                <h1 className='upcoming-event-heading'>{event.title}</h1>
+                <p className="upcoming-event-description">
                   {event.description}
                 </p>
                 {event.formLink ? (
@@ -46,7 +46,7 @@ const UpcomingEvents = () => {
                     href={event.formLink} 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="register-btn"
+                    className="upcoming-register-btn"
                   >
                     Register
                   </a>
