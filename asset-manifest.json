@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MCS-Website/static/css/main.9fc46348.css",
-    "main.js": "/MCS-Website/static/js/main.4f2f260f.js",
+    "main.js": "/MCS-Website/static/js/main.2661c739.js",
     "static/js/453.8ab44547.chunk.js": "/MCS-Website/static/js/453.8ab44547.chunk.js",
     "static/media/AboutUs-lp.png": "/MCS-Website/static/media/AboutUs-lp.5ade0ffcee4ecdfae2a5.png",
     "static/media/Hero.png": "/MCS-Website/static/media/Hero.52fe0e999dc89a10c652.png",
@@ -12,11 +12,11 @@
     "static/media/slick.woff": "/MCS-Website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/MCS-Website/index.html",
     "main.9fc46348.css.map": "/MCS-Website/static/css/main.9fc46348.css.map",
-    "main.4f2f260f.js.map": "/MCS-Website/static/js/main.4f2f260f.js.map",
+    "main.2661c739.js.map": "/MCS-Website/static/js/main.2661c739.js.map",
     "453.8ab44547.chunk.js.map": "/MCS-Website/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9fc46348.css",
-    "static/js/main.4f2f260f.js"
+    "static/js/main.2661c739.js"
   ]
 }
