@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../css/ImageViewer.css'; // Adjust the path as necessary // Adjust the path as necessary
+import '../css/ImageViewer.css'; // Adjust the path as necessary
 
 const ImageViewer = () => {
   const [images, setImages] = useState([]);

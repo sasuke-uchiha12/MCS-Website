@@ -10,3 +10,50 @@
   font-family: 'Press Start 2P', cursive;
   letter-spacing: 2px;
 }
+
+/* Media Queries */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .footer {
+    font-size: 8px;
+    padding: 8px 0;
+    letter-spacing: 1px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .footer {
+    font-size: 9px;
+    padding: 9px 0;
+    letter-spacing: 1.5px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer {
+    font-size: 10px;
+    padding: 10px 0;
+    letter-spacing: 2px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .footer {
+    font-size: 11px;
+    padding: 11px 0;
+    letter-spacing: 2.5px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .footer {
+    font-size: 12px;
+    padding: 12px 0;
+    letter-spacing: 3px;
+  }
+}

@@ -30,7 +30,7 @@ const ContactSection = () => {
             </button>
           </div>
         </div>
-        <p>© 2024 Copyrights MCS</p>
+        <h3>© 2024 Copyrights MCS</h3>
       </div>
     </section>
   );

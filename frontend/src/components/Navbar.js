@@ -9,16 +9,20 @@ const Navbar = () => {
     setMenuActive(!menuActive);
   };
 
+  const closeMenu = () => {
+    setMenuActive(false);
+  };
+
   return (
     <nav className="navbar">
-      <div className="logo">LOGO</div>
+      <Link to="/" className="logo">LOGO</Link>
       <div className={`nav-links ${menuActive ? 'active' : ''}`}>
-        <Link to="/events" className="nav-link" onClick={toggleMenu}>EVENTS</Link>
-        <Link to="/gallery" className="nav-link" onClick={toggleMenu}>GALLERY</Link>
-        <Link to="/team" className="nav-link" onClick={toggleMenu}>TEAM</Link>
-        <Link to="/contact" className="nav-link" onClick={toggleMenu}>CONTACT</Link>
+        <Link to="/events" className="nav-link" onClick={closeMenu}>EVENTS</Link>
+        <Link to="/gallery" className="nav-link" onClick={closeMenu}>GALLERY</Link>
+        <Link to="/team" className="nav-link" onClick={closeMenu}>TEAM</Link>
+        <Link to="/contact" className="nav-link" onClick={closeMenu}>CONTACT</Link>
       </div>
-      <div className="menu-button" onClick={toggleMenu}>
+      <div className={`menu-button ${menuActive ? 'open' : ''}`} onClick={toggleMenu}>
         <div></div>
         <div></div>
         <div></div>

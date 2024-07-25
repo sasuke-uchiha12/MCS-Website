@@ -13,6 +13,7 @@ textarea {
     font-family: 'Montserrat', sans-serif;
     background-color: #2d303a;
     color: #828282;
+    width: 100%; /* Increase the width to 100% of the form container */
 }
 
 textarea {
@@ -51,5 +52,83 @@ textarea {
     transition: opacity 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 
+/* Media Queries */
 
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    input,
+    textarea {
+        padding: 12px;
+        font-size: 14px;
+        width: 135%; /* Ensure full width on small devices */
+    }
 
+    .send-message {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    input,
+    textarea {
+        padding: 15px;
+        font-size: 15px;
+        width: 100%; /* Ensure full width on small devices */
+    }
+
+    .send-message {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+        font-size: 15px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    input,
+    textarea {
+        padding: 17px;
+        font-size: 16px;
+        width: 100%; /* Ensure full width on medium devices */
+    }
+
+    .send-message {
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    input,
+    textarea {
+        padding: 18px;
+        font-size: 17px;
+        width: 100%; /* Ensure full width on large devices */
+    }
+
+    .send-message {
+        padding: 16px;
+        font-size: 17px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    input,
+    textarea {
+        padding: 20px;
+        font-size: 18px;
+        width: 100%; /* Ensure full width on extra large devices */
+    }
+
+    .send-message {
+        padding: 18px;
+        font-size: 18px;
+    }
+}

@@ -29,8 +29,28 @@ const ImageSlider = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
+    centerMode: false,
+    centerPadding: '0px',
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: '90px', // Ensure visibility of left and right images
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: '90px', // Ensure visibility of left and right images
+        },
+      },
+    ],
   };
 
   return (
