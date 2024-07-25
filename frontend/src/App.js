@@ -10,7 +10,7 @@ import Admin from './pages/Admin';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/MCS-Website">
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
