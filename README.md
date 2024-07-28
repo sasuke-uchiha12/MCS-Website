@@ -77,7 +77,6 @@ nodemon server.js or node server.js
 
 ## Technologies Used
 - React, React Router, Sass
-- Python, Flask
+- Node js, Express
 - MongoBD
 - GitHub Pages
-- TextBlob for sentiment analysis
